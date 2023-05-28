@@ -118,6 +118,7 @@ body {
 
 .topLine > p > span > button.reply:hover{
     color: hsl(228, 31%, 64%);
+    cursor: pointer;
 
 }
 .topLine > p > span > button.reply:active{
@@ -133,6 +134,7 @@ body {
 }
 .topLine > p > span > button.delete:hover{
     color: hsl(228, 31%, 64%);
+    cursor: pointer;
 
 }
 .topLine > p > span > button.delete:active{
@@ -153,6 +155,7 @@ body {
 }
 .topLine > p > span > button.edit:hover{
     color: hsl(228, 31%, 64%);
+    cursor: pointer;
 
 }
 .topLine > p > span > button.edit:active{
