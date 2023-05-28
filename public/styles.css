@@ -1,3 +1,30 @@
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: hsl(237, 39%, 65%);
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
 body {
     width: 750px;
     margin: auto;
@@ -35,8 +62,9 @@ body {
     margin-bottom: 4px;
 }
 
-.upVote > p > span > button:hover {
-    background-color: rgb(255, 255, 255);
+.upVote > p > span > button> span:hover {
+    color: hsl(238, 40%, 52%);
+    font-weight: bolder;
     cursor: pointer;
 }
 
@@ -46,17 +74,18 @@ body {
 
 .topLine {
     padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .topLine > p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
-.topLine > p > span {
-    padding-right: 25px;
+.topLine > p > span.N0 {
+
 }
 
 .topLine > p > span > img {
@@ -70,20 +99,89 @@ body {
 
 .topLine > p > span.N3 {
     color: rgb(190, 190, 190);
+
+}
+.topLine > p > span> button.reply{
+    background-color: transparent;
+    border-style: hidden ;
+    padding-left:200px;
+    padding-right: 25px;
+    font-weight: 700;
+
+    color: hsl(228, 40%, 52%);
+}
+
+.topLine > p > span > button.reply> span.material-icons{
+    color: hsl(228, 40%, 52%);
+
+}
+
+.topLine > p > span > button.reply:hover{
+    color: hsl(228, 31%, 64%);
+
+}
+.topLine > p > span > button.reply:active{
+    transform: translateY(2px)
+
+}
+.topLine > p > span>button.delete{
+    background-color: transparent;
+    border-style: hidden;
+    color: hsl(228, 40%, 52%);
+    font-weight: 700;
+
+}
+.topLine > p > span > button.delete:hover{
+    color: hsl(228, 31%, 64%);
+
+}
+.topLine > p > span > button.delete:active{
+    transform: translateY(2px)
+
+}
+.topLine > p > span > button.delete > span.material-icons{
+    color: hsl(228, 40%, 52%);
+
+}
+.topLine > p > span>button.edit{
+    background-color: transparent;
+    border-style: hidden;
+    font-weight: 700;
+    color: hsl(228, 40%, 52%);
+    padding-right: 25px;
+
+}
+.topLine > p > span > button.edit:hover{
+    color: hsl(228, 31%, 64%);
+
+}
+.topLine > p > span > button.edit:active{
+    transform: translateY(2px)
+
+}
+.topLine > p > span > button.edit > span.material-icons{
+    color: hsl(228, 40%, 52%);
+
+}
+#you{
+    background-color: hsl(228, 40%, 52%);
+    color: hsl(228, 33%, 97%);
+    padding: 3px 6px 6px 6px;
+    border-radius: 2px;
 }
 
 .container.ogCom {
     align-self: flex-end;
     max-width: 750px;
     margin: 15px;
-    margin-right: 35px
+    margin-right: 20px
 }
 
 .container.reCom {
     align-self: flex-end;
     max-width: 600px;
     margin: 15px;
-    margin-right: 35px;
+    margin-right: 20px;
 }
 
 .container.comment > p {

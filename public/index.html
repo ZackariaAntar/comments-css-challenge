@@ -13,9 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./vendors/jquery.js"></script>
-  <script src="./scripts/index.js"></script>
+  <!-- <script src="./vendors/jquery.js"></script> -->
+  <!-- <script src="./scripts/index.js"></script> -->
 
   <title>CSS Challenge | Interactive comments section</title>
 
@@ -31,9 +32,10 @@
     <!-- Comment #1 -->
     <div class="upVote">
       <p>
-        <span><button class="plus">＋</button></span>
+
+        <span><button class="plus"><span class="material-icons">add</span></button></span>
         <span class="number">12</span>
-        <span><button class="minus">−</button></span>
+        <span><button class="minus"><span class="material-icons">remove</span></button></span>
       </p>
 
     </div>
@@ -52,10 +54,8 @@
 
         <span class="N3">1 month ago</span>
 
-        <!-- <span class="N4">delete</span> -->
 
-        <!-- <span class="N5">edit</span> -->
-        <!-- If [YOU]-->
+        <span><button class="reply"><span class="material-icons">reply</span> <span>Reply</span></button></span>
 
         <!-- <span class="N6">↩ Reply</span> -->
         <!-- If [NOT YOU] -->
@@ -74,9 +74,9 @@
     <!-- Comment #2 -->
     <div class="upVote">
       <p>
-        <span><button>＋</button></span>
+        <span><button class="plus"><span class="material-icons">add</span></button></span>
         <span class="number">5</span>
-        <span><button>−</button></span>
+        <span><button class="minus"><span class="material-icons">remove</span></button></span>
       </p>
     </div>
 
@@ -85,6 +85,7 @@
         <span><img src="./images/avatars/image-maxblagun.png" alt="profile" /></span>
         <span class="N1">maxblagun</span>
         <span class="N3">2 weeks ago</span>
+        <span><button class="reply"><span class="material-icons">reply</span> <span>Reply</span></button></span>
       </p>
 
       <div class="bottomLine">
@@ -103,9 +104,9 @@
     <!-- Comment #3 (Reply to comment #2) -->
     <div class="upVote">
       <p>
-        <span><button>＋</button></span>
+        <span><button class="plus"><span class="material-icons">add</span></button></span>
         <span class="number">4</span>
-        <span><button>−</button></span>
+        <span><button class="minus"><span class="material-icons">remove</span></button></span>
       </p>
     </div>
 
@@ -114,6 +115,7 @@
         <span><img src="./images/avatars/image-ramsesmiron.png" alt="profile" /></span>
         <span class="N1">ramsesmiron</span>
         <span class="N3">1 week ago</span>
+        <span><button class="reply"><span class="material-icons">reply</span> <span>Reply</span></button></span>
       </p>
 
       <div class="bottomLine">
@@ -130,16 +132,19 @@
     <!-- Comment #4 (Reply to comment #2) -->
     <div class="upVote">
       <p>
-        <span><button>＋</button></span>
+        <span><button class="plus"><span class="material-icons">add</span></button></span>
         <span class="number">2</span>
-        <span><button>−</button></span>
+        <span><button class="minus"><span class="material-icons">remove</span></button></span>
       </p>
     </div>
     <div class="topLine">
       <p>
         <span><img src="./images/avatars/image-juliusomo.png" alt="profile" /></span>
         <span class="N1">juliusomo</span>
+        <span id="you">you</span>
         <span class="N3">2 days ago</span>
+        <span><button class="delete"><span class="material-icons">delete</span><span>Delete</span></button></span>
+        <span><button class="edit"><span class="material-icons">edit</span><span>Edit</span></button></span>
       </p>
 
 
