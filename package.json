@@ -1,0 +1,13 @@
+{
+  "name": "comments-css-challenge",
+  "version": "1.0.0",
+  "description": "Your challenge is to build out this comments section in HTML and CSS and get it looking as close to the design as possible:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
