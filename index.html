@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -17,117 +19,157 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-<article class="ogCom ${YOU OR NOT YOU}" id="${user}">
-  <!-- Comment #1 -->
-
-  <!-- upvote OWN SECTION LEFT OF ogCom -->
-  <!-- PLUS ICON *ABOVE*-->
-  <div class="upVote">
-    <p>
-      <span>+</span>
-      <span>12</span>
-      <span>-</span>
-    </p>
-
-  </div>
 
 
+  <article class="container ogCom ${YOU OR NOT YOU}" id="${user}">
+    <!-- Comment #1 -->
+    <div class="upVote">
+      <p>
+        <span><button>＋</button></span>
+        <span>12</span>
+        <span><button>−</button></span>
+      </p>
+
+    </div>
+
+    <div class="topLine">
+      <!-- *N:0* LINE 1   -->
+      <p>
+        <span class="N0">
+          <img class="profilePic" src="./images/avatars/image-amyrobson.png" alt="profile" />
+        </span>
+
+        <!-- bolded text  *N:1* LINE 1 **[IF YOU]** SHOW N:2-N:5 **[ELSE]** SHOW N:3 & N:6  -->
+        <span class="N1">amyrobson</span>
+
+        <!-- <span class="N2">YOU</span> -->
+
+        <span class="N3">1 month ago</span>
+
+        <!-- <span class="N4">delete</span> -->
+
+        <!-- <span class="N5">edit</span> -->
+        <!-- If [YOU]-->
+
+        <!-- <span class="N6">reply</span> -->
+        <!-- If [NOT YOU] -->
+      </p>
+
+      <div class="bottomLine">
+        <p>
+          Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed
+          the design and the responsiveness at various breakpoints works really well.
+        </p>
+      </div>
+    </div>
+  </article>
 
 
-  <div class="topLine">
-
-  <!-- MINUS ICON *BELOW* -->
-  <!-- upvote -->
-
-  <!-- *N:0* LINE 1   -->
-
-    <p>
-    <span>
-      <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-
-    </span>
 
 
 
-  <!-- START LINE 1 -->
+  <article class="container ogCom ${YOU OR NOT YOU}" id="${user}">
+    <!-- Comment #2 -->
+    <div class="upVote">
+      <p>
+        <span><button>＋</button></span>
+        <span>5</span>
+        <span><button>−</button></span>
+      </p>
+    </div>
 
-  <!-- bolded text  *N:1* LINE 1 **[IF YOU]** SHOW N:2-N:5 **[ELSE]** SHOW N:3 & N:6  -->
+    <div class="topLine">
+      <p>
+        <span><img src="./images/avatars/image-maxblagun.png" alt="profile" /></span>
+        <span>maxblagun</span>
+        <span>2 weeks ago</span>
+      </p>
 
-  <span>amyrobson</span>
-  <!-- bolded text -->
+      <div class="bottomLine">
+        <p>
+          Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive
+          into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+        </p>
+      </div>
+    </div>
 
-  <!-- *N:2* -->
-  <!-- [YOU] -->
-  <!-- *N:2* -->
+  </article>
 
-  <!-- flavor text  *N:3* LINE 1 -->
-  <span>1 month ago</span>
-  <!-- flavor text -->
+  <!-- SHOW reCom of id${user} UNDER/AFTER ogCom RIGHT ALIGN 80% of ogCom -->
 
-  <!-- *N:4* [YOU] LINE 1-->
-  <!-- DELETE -->
-  <!-- *N:4* [YOU] LINE 1 -->
+  <article class="container reCom ${YOU OR NOT YOU}" id="${user}">
+    <!-- Comment #3 (Reply to comment #2) -->
+    <div class="upVote">
+      <p>
+        <span><button>＋</button></span>
+        <span>4</span>
+        <span><button>−</button></span>
+      </p>
+    </div>
 
-  <!-- *N:5* [YOU] LINE 1 -->
-  <!-- EDIT -->
-  <!-- *N:5* [YOU] LINE 1 -->
+    <div class="topLine">
+      <p>
+        <span><img src="./images/avatars/image-ramsesmiron.png" alt="profile" /></span>
+        <span>ramsesmiron</span>
+        <span>1 week ago</span>
+      </p>
+
+      <div class="bottomLine">
+        <p>
+          @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before
+          considering React. It's very tempting to jump ahead but lay a solid foundation first.
+        </p>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="container reCom ${YOU OR NOT YOU}" id="${user}">
+    <!-- Comment #4 (Reply to comment #2) -->
+    <div class="upVote">
+      <p>
+        <span><button>＋</button></span>
+        <span>2</span>
+        <span><button>−</button></span>
+      </p>
+    </div>
+    <div class="topLine">
+      <p>
+        <span><img src="./images/avatars/image-juliusomo.png" alt="profile" /></span>
+        <span>juliusomo</span>
+        <span>2 days ago</span>
+      </p>
 
 
-  <!-- *N:6* LINE 1 [NOT YOU] -->
-  <!-- [reply] -->
-  <!-- *N:6* LINE 1 [NOT YOU] -->
+      <div class="bottomLine">
+        <p>
+          @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows
+          the newest library/framework. But the fundamentals are what stay constant.
+        </p>
+      </div>
+    </div>
+  </article>
 
-  </p>
-
-  <!-- regular text ALL LINE 2  -->
-  <div class="bottomLine">
-  <p>
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
-  <!-- regular text -->
-  </p>
-  </div>
-  </div>
-</article>
-
-<article class="ogCom ${YOU OR NOT YOU}" id="${user}">
-  <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-</article>
-
-<!-- SHOW reCom of id${user} UNDER/AFTER ogCom RIGHT ALIGN 80% of ogCom -->
-
-<article class="reCom ${YOU OR NOT YOU}" id="${user}">
-  <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-</article>
-
-<article class="reCom ${YOU OR NOT YOU}" id="${user}">
-  <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-</article>
 
 
   <article class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Zackaria Antar</a>.
   </article>
 </body>
+
 </html>
