@@ -1,82 +1,82 @@
-body{
+body {
     width: 750px;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:hsl(228, 33%, 97%);
+    background-color: hsl(228, 33%, 97%);
     font-family: 'Rubik', sans-serif;
 }
 
 .upVote {
     padding-left: 15px;
 }
-.upVote>p{
+
+.upVote > p {
     display: flex;
     flex-direction: column;
-    background-color:  rgb(226, 229, 229);
-    padding:5px;
+    background-color: rgb(226, 229, 229);
+    padding: 5px;
     text-align: center;
     border-style: hidden;
     border-radius: 8px;
-
 }
-.upVote > p > span.number{
+
+.upVote > p > span.number {
     color: hsl(238, 40%, 52%);
     font-weight: 500;
-
 }
 
-.upVote>p>span>button {
-    border-style:hidden ;
+.upVote > p > span > button {
+    border-style: hidden;
     border-radius: 4px;
     background-color: transparent;
     margin-top: 4px;
     margin-bottom: 4px;
-
 }
 
 .upVote > p > span > button:hover {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
-
 }
-.upVote > p > span >button:active {
+
+.upVote > p > span > button:active {
     transform: translateY(2px);
 }
 
 .topLine {
-    /* border: 1px solid salmon; */
     padding-left: 15px;
     padding-right: 15px;
-
 }
-.topLine>p{
+
+.topLine > p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 1px solid salmon; */
 }
-.topLine>p>span{
+
+.topLine > p > span {
     padding-right: 25px;
 }
-.topLine > p > span > img{
-     max-height: 40px;
+
+.topLine > p > span > img {
+    max-height: 40px;
 }
+
 .topLine > p > span.N1 {
     color: black;
     font-weight: bolder;
 }
+
 .topLine > p > span.N3 {
     color: rgb(190, 190, 190);
-
 }
-.container.ogCom{
-    align-self: flex-end;
-        max-width: 750px;
-        margin: 15px;
-        margin-right: 35px
 
+.container.ogCom {
+    align-self: flex-end;
+    max-width: 750px;
+    margin: 15px;
+    margin-right: 35px
 }
 
 .container.reCom {
@@ -84,24 +84,26 @@ body{
     max-width: 600px;
     margin: 15px;
     margin-right: 35px;
-
 }
-.container.comment>p{
+
+.container.comment > p {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
 
 }
 
-.container.comment > p > span{
+.container.comment > p > span {
     padding-right: 35px;
 }
-.container.comment > p > span> img {
+
+.container.comment > p > span > img {
     max-height: 40px;
     padding-left: 30px;
     margin-bottom: 60px;
 }
-.container.comment > p > span > textarea{
+
+.container.comment > p > span > textarea {
     border-radius: 8px;
     border-color: lightgray;
     width: 400px;
@@ -109,16 +111,13 @@ body{
     padding: 12px 20px;
     font-family: 'Rubik', sans-serif;
     resize: none;
-
 }
 
-.container.comment > p > span > textarea::placeholder{
+.container.comment > p > span > textarea::placeholder {
     color: black;
 }
 
-
-
-.container.comment > p > span > button{
+.container.comment > p > span > button {
     border-radius: 8px;
     border-style: hidden;
     background-color: hsl(238, 40%, 52%);
@@ -126,44 +125,36 @@ body{
     width: 100px;
     height: 45px;
     margin-bottom: 60px;
-
-
-
-
 }
-.container.comment > p > span > button:hover{
-    background-color:transparent;
+
+.container.comment > p > span > button:hover {
+    background-color: transparent;
     border: 3px solid hsl(238, 40%, 52%);
     color: hsl(238, 40%, 52%);
     font-weight: bolder;
     cursor: pointer;
     box-shadow: 2.5px 2.5px grey;
-
-
 }
-.container.comment > p > span > button:active{
+
+.container.comment > p > span > button:active {
     transform: translateY(2px)
-
 }
 
-.topLine>div.bottomLine{
+.topLine > div.bottomLine {
     padding-bottom: 10px;
     font-size: 16px;
-    /* margin-right: 155px; */
 }
 
-
-.container{
+.container {
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
     margin: 15px;
     border-style: hidden;
     border-radius: 16px;
+}
 
-};
-
-footer{
+footer {
     height: 100px;
 }
 

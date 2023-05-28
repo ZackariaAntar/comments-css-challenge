@@ -1,4 +1,4 @@
-$(document).ready(onReady)
+$(document).ready(onReady);
 let pageData = [
 	{
 		name: "amyrobson",
@@ -30,29 +30,16 @@ let pageData = [
 	},
 ];
 
-function onReady(){
-    $('article')
+function onReady() {
+	$("article");
 }
 
+function changeVotes() {}
 
-function changeVotes(){
+function addComment() {}
 
-}
+function editComment() {}
 
-function addComment(){
+function removeComment() {}
 
-}
-
-function editComment() {
-
-}
-
-function removeComment() {
-
-}
-
-function conditionalRender(){
-
-}
-
-
+function conditionalRender() {}
