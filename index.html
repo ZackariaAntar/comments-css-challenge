@@ -19,27 +19,18 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
   </style>
 </head>
 
 <body>
-
-
 
   <article class="container ogCom ${YOU OR NOT YOU}" id="${user}">
     <!-- Comment #1 -->
     <div class="upVote">
       <p>
         <span><button>＋</button></span>
-        <span>12</span>
+        <span class="number">12</span>
         <span><button>−</button></span>
       </p>
 
@@ -77,16 +68,12 @@
     </div>
   </article>
 
-
-
-
-
   <article class="container ogCom ${YOU OR NOT YOU}" id="${user}">
     <!-- Comment #2 -->
     <div class="upVote">
       <p>
         <span><button>＋</button></span>
-        <span>5</span>
+        <span class="number">5</span>
         <span><button>−</button></span>
       </p>
     </div>
@@ -94,8 +81,8 @@
     <div class="topLine">
       <p>
         <span><img src="./images/avatars/image-maxblagun.png" alt="profile" /></span>
-        <span>maxblagun</span>
-        <span>2 weeks ago</span>
+        <span class="N1">maxblagun</span>
+        <span class="N3">2 weeks ago</span>
       </p>
 
       <div class="bottomLine">
@@ -115,7 +102,7 @@
     <div class="upVote">
       <p>
         <span><button>＋</button></span>
-        <span>4</span>
+        <span class="number">4</span>
         <span><button>−</button></span>
       </p>
     </div>
@@ -123,8 +110,8 @@
     <div class="topLine">
       <p>
         <span><img src="./images/avatars/image-ramsesmiron.png" alt="profile" /></span>
-        <span>ramsesmiron</span>
-        <span>1 week ago</span>
+        <span class="N1">ramsesmiron</span>
+        <span class="N3">1 week ago</span>
       </p>
 
       <div class="bottomLine">
@@ -142,15 +129,15 @@
     <div class="upVote">
       <p>
         <span><button>＋</button></span>
-        <span>2</span>
+        <span class="number">2</span>
         <span><button>−</button></span>
       </p>
     </div>
     <div class="topLine">
       <p>
         <span><img src="./images/avatars/image-juliusomo.png" alt="profile" /></span>
-        <span>juliusomo</span>
-        <span>2 days ago</span>
+        <span class="N1">juliusomo</span>
+        <span class="N3">2 days ago</span>
       </p>
 
 
@@ -163,13 +150,25 @@
     </div>
   </article>
 
+  <article class="container comment" id= "${YOU}">
+    <p>
+      <span><img src="./images/avatars/image-juliusomo.png" alt="profile" /></span>
+      <span><textarea  placeholder="Add a comment..." id="addComment"></textarea></span>
+      <span><button class="send">SEND</button></span>
+    </p>
+
+  </article>
 
 
-  <article class="attribution">
+
+
+</body>
+<footer>
+    <article class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9"
       target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Zackaria Antar</a>.
   </article>
-</body>
+</footer>
 
 </html>
