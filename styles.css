@@ -7,13 +7,16 @@ body{
     background-color: wheat;
 }
 .upVote {
-    padding: 20px;
-    background-color: grey;
-
+    padding-left: 15px;
 }
 .upVote>p{
     display: flex;
     flex-direction: column;
+    background-color: rgb(198, 198, 198);
+    padding:15px;
+    text-align: center;
+    border-style: hidden;
+    border-radius: 8px;
 
 }
 .topLine {
@@ -32,14 +35,14 @@ body{
     padding-right: 35px;
 }
 .bottomLine {
-   background-color: aquamarine;
+   /* background-color: aquamarine; */
 }
-
 .ogCom{
     display: flex;
     flex-direction: row;
-    min-width: 850px;
-    background-color: azure
+    max-width: 850px;
+    background-color: azure;
+    margin: 15px;
 
 
 };
@@ -51,6 +54,12 @@ body{
 
 /* ------------------------------------------------------------------------------------------ */
 .reCom {
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    max-width: 850px;
+    margin: 15px;
+
 
 };
 /* ------------------------------------------------------------------------------------------ */
