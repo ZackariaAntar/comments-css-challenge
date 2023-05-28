@@ -1,6 +1,54 @@
+body{
+    width: 900px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: wheat;
+}
+.upVote {
+    padding: 20px;
+    background-color: grey;
+
+}
+.upVote>p{
+    display: flex;
+    flex-direction: column;
+
+}
+.topLine {
+    border: 1px solid salmon;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.topLine>p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid salmon;
+}
+.topLine>p>span{
+    padding-right: 35px;
+}
+.bottomLine {
+   background-color: aquamarine;
+}
+
 .ogCom{
+    display: flex;
+    flex-direction: row;
+    min-width: 850px;
+    background-color: azure
+
 
 };
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+
 /* ------------------------------------------------------------------------------------------ */
 .reCom {
 
